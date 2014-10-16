@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+import com.zubiri.geometria.*;
 
 public class OperacionesGeometria {
 
@@ -13,7 +14,7 @@ public class OperacionesGeometria {
           System.out.print("\nElige una opcion: Circulo o Rectangulo");
           opcion = sc.next();
 
-	  if (opcion.equalsIgnoreCase("Circulo") == 1)
+	  if (opcion.equalsIgnoreCase("Circulo") == true)
 	  {
 		double radio, result;
 		Circulo circulo = new Circulo();
@@ -31,7 +32,7 @@ public class OperacionesGeometria {
 		
 	  }
 
-	 else { 
+	  else { 
 	
 		double base, altura;
 		Rectangulo operaciones = new Rectangulo();
@@ -44,39 +45,10 @@ public class OperacionesGeometria {
 		operaciones.setBase(base);
 		operaciones.setAltura(altura);
 
-	
-		
-	System.out.println("\nEl perimetro del rectangulo es: " + operaciones.perimetro());
+		System.out.println("\nEl perimetro del rectangulo es: " + operaciones.perimetro());
 
-	System.out.println("\nLa superficie del rectangulo es: " + operaciones.area());
+		System.out.println("\nLa superficie del rectangulo es: " + operaciones.area());
+		}
 
-
-
-
-	}
-
-
-/*double altura;
-	  double base;
-     
-	  Opcua opcua = new Opcua();
-
-	  Scanner sc = new Scanner(System.in);
-          System.out.print("\ningresa la altura: ");
-          altura = sc.nextDouble();
-
-          	  
-          System.out.print("\ningresa la base: ");
-          base = sc.nextDouble();
-	  
- 	  opcua.setAltura(altura);
-	  opcua.setBase(base);
-
-	
-	  System.out.println("el perimetro es: " + opcua.perimetro()); 
-			
-	  
-	  System.out.println("El area es: " + opcua.area()); */
         }
-
 }
